@@ -1,13 +1,14 @@
-import { Inter } from "next/font/google";
+import Head from 'next/head';
 
-const inter = Inter({ subsets: ["latin"] });
-
-function MyApp({ Component, pageProps }) {
+export default function Home() {
   return (
-    <main className={inter.className}>
-      <Component {...pageProps} />
-    </main>
+    <>
+      <Head>
+        <title>Mi Sitio Optimizado</title>
+        <meta name="google-site-verification" content="GWcUuYkAn8sPZU2Gz1uMDIqR8xO5LPh0qSqRNrhLHuw" />
+        {/* otras etiquetas */}
+      </Head>
+      <h1>Bienvenido</h1>
+    </>
   );
 }
-
-export default MyApp;
